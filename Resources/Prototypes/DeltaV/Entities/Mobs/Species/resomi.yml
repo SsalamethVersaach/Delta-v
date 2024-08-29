@@ -26,12 +26,12 @@
     - "enum.HumanoidVisualLayers.LFoot"
     damageOverlayGroups:
       Brute:
-        sprite: /DeltaV/Mobs/Effects/Resomi/brute_damage.rsi
+        sprite: DeltaV/Mobs/Effects/Resomi/brute_damage.rsi
         color: "#C048C2"
       Burn:
-        sprite: /DeltaV/Effects/Resomi/burn_damage.rsi
+        sprite: DeltaV/Effects/Resomi/burn_damage.rsi
   - type: FireVisuals
-    sprite: /DeltaV/Mobs/Effects/onfire.rsi
+    sprite: DeltaV/Mobs/Effects/onfire.rsi
     normalState: Resomi_minor_burning
     alternateState: Resomi_burning
   - type: HumanoidAppearance
@@ -41,7 +41,7 @@
     needsHands: false
   - type: Thirst
   - type: Icon
-    sprite: /DeltaV/Mobs/Species/Resomi/parts.rsi
+    sprite: DeltaV/Mobs/Species/Resomi/parts.rsi
     state: full
   - type: Body
     prototype: Resomi
