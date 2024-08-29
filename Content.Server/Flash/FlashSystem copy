@@ -1,7 +1,5 @@
 using System.Linq;
 using Content.Server.Flash.Components;
-using Content.Shared.DeltaV.Flash;
-using Content.Shared.DeltaV.Flash.Components;
 using Content.Shared.Flash.Components;
 using Content.Server.Light.EntitySystems;
 using Content.Server.Popups;
@@ -118,11 +116,6 @@ namespace Content.Server.Flash
             bool melee = false,
             TimeSpan? stunDuration = null)
         {
-             if (TryComp<FlashModifierComponent>(target, out var CompUser))
-            {
-                flashDuration *= CompUser.Modifier;
-            }
-
             var attempt = new FlashAttemptEvent(target, user, used);
             RaiseLocalEvent(target, attempt, true);
 
