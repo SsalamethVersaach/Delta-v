@@ -9,8 +9,16 @@
   - type: Fixtures
     fixtures:
       fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.34
+        density: 85
+        restitution: 0.0
+        mask:
+        - MobMask
         layer:
-        - FlyingMobLayer
+        - MobLayer
+  - type: FloorOcclusion
   - type: DamageVisuals
     thresholds: [ 10, 30, 50, 70]
     targetLayers:
@@ -26,12 +34,12 @@
     - "enum.HumanoidVisualLayers.LFoot"
     damageOverlayGroups:
       Brute:
-        sprite: DeltaV/Mobs/Effects/Resomi/brute_damage.rsi
+        sprite: DeltaV/Effects/Resomi/brute_damage.rsi
         color: "#C048C2"
       Burn:
         sprite: DeltaV/Effects/Resomi/burn_damage.rsi
   - type: FireVisuals
-    sprite: DeltaV/Mobs/Effects/onfire.rsi
+    sprite: DeltaV/Effects/onfire.rsi
     normalState: Resomi_minor_burning
     alternateState: Resomi_burning
   - type: HumanoidAppearance
@@ -47,7 +55,7 @@
     prototype: Resomi
     requiredLegs: 2
   - type: Bloodstream
-    bloodReagent: ResomiBlood
+    bloodReagent: AmmoniaBlood
   - type: MobThresholds
     thresholds:
       0: Alive
